@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #363638;
+  background: #fff;
+  line-height: 30px;
+  font-size: 19px;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #1E1E20;
+}
+
+canvas {
+  display: block;
+  background: #1E1E20;
+}
+
+#ui-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 420px;
+  padding: 30px;
+}
+
+.ui-box {
+  background: #18181B;
+  border-radius: 4px;
+  min-width: 100%;
+  min-height: 40px;
+  margin-bottom: 0.6em;
+}
+
+.ui-line {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0px 14px;
+  user-select: none;
+}
+
+.ui-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0px 14px;
+  user-select: none;
+}
+
+.ui-group {
+  display: flex;
+  align-items: center;
+}
+
+.ui-list {
+  display: flex;
+  align-items: center;
+  padding: 0px 14px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ui-list::webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  font-weight: 600;
+  color: #E5E7EB;
+  font-size: 14px;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: #D4D4D8;
+  font-size: 14px;
+}
+
+.text {
+  font-weight: 500;
+  color: #D4D4D8;
+  font-size: 14px;
+}
+
+.position {
+  font-style: italic;
+  color: #71717A;
+}
+
+.version {
+  color: #363638;
+  font-size: 14px;
+  margin-left: 0.5em;
+}
+
+.icon {
+  cursor: pointer;
+  color: #71717A;
+  padding-top: 3px;
+  min-width: 16px;
+}
+
+.icon.active, .icon.box {
+  color: #FB923C;
+}
+
+.icon.attribute {
+  padding-top: 0px;
+  padding-left: 2px;
+}
+
+.icon.move {
+  min-width: 14px;
+}
+
+@media(max-width: 600px) {
+  #ui-container {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .ui-line {
+    border-bottom: 1px solid #ffffff15
+  }
+}

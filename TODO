@@ -1,0 +1,40 @@
+[x] editor state, drawing to the Canvas
+[x] editor state, exposing state to the UI
+[ ] encoding state as the hash
+[x] raycasting for click interactions
+[x] SVG importing, copy from simple IF
+[x] text rendering for symbols to add to 3D UI elements
+[x] stagger invisibox bounding cubes so that the top ones are smaller, and the bottom ones are bigger
+[x] platform resize function, camera pan complies to new bounds
+  [ ] expansion controls for the platform
+[x] graphics code refactor
+[ ] cube-editing UI
+  [x] basic colors
+  [x] some way of indicating which cube is selected
+  [x] clicking on nothing ends the selection
+  [ ] panels
+  [ ] growing the cube in the x or z directions
+[ ] modal editing, the cube-adding highlights make selection too difficult
+  [ ] editing mode toolbar, select, construct
+
+---
+
+[ ] listen for resize events and resize viewport + camera
+[ ] option to show box placement options for mobile
+[ ] 3d floor grid decorations, to show depth
+  [ ] different design under tiles that have invisicubes
+[ ] find a way to control the viewport for off-center display
+  [ ] also, zooming in on the selected cube on mobile
+[ ] when encoding hash, camera should be rotated to side with most panels
+  [ ] also, with the platform trimmed down to size
+[ ] decorations panel in box UI
+[ ] keyboard controls
+  [ ] pressing ctrl highlights box placement options
+  [ ] quick-edit color
+  [ ] quick delete
+  [ ] quick-edit text
+[ ] active color + pattern indicator in the UI
+
+---
+
+[ ] add soft gradient effect to color previews, more aesthetic outlines?

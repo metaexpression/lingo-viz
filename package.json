@@ -1,0 +1,33 @@
+{
+  "name": "lingo-viz",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "metaepxression",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "nodemon -w webpack.config.babel.js -w .babelrc -x 'webpack-dev-server --no-progress'",
+    "build": "NODE_ENV=production webpack --no-progress -p"
+  },
+  "dependencies": {
+    "preact": "^10.5.14",
+    "three": "^0.153.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "nodemon": "^2.0.7",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^0.21.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
